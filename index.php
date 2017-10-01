@@ -5,6 +5,7 @@ $app->initLayout('Centered');
 $button = $app->add('Button');
 $button->set('Follower');
 $button->icon = 'comment';
+$button->link ('https://www.youtube.com');
 $button = $app->add('Button');
 $button->set('Registration');
 $button->icon = 'add user';
