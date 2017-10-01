@@ -10,3 +10,7 @@ $button = $app->add('Button');
 $button->set('Registration');
 $button->icon = 'add user';
 $button->link ('https://www.e-klase.lv');
+$button = $app->add('Button');
+$button->set('Android site');
+$button->icon = 'android';
+$button->link ('https://www.android.com');
