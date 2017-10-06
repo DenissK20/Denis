@@ -22,3 +22,4 @@ $button->set('My chess site');
 $button->addClass('massive grey');
 $button->icon = 'delicious';
 $button->link ('http://deniskariga.wixsite.com/chess-lessons-free');
+$button=$app->add(['Button','Next','iconRight'=>'right arrow']);
