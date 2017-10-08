@@ -22,4 +22,4 @@ $button->set('Android site');
 $button->addClass('big green');
 $button->icon = 'android';
 $button->link ('https://www.android.com');
-$button=$app->add(['Button','Next','iconRight','massive teal'=>'right arrow']);
+$button=$app->add(['Button','Next','iconRight'=>'right arrow']);
