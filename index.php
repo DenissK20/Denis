@@ -34,7 +34,9 @@ $text = $app->add(['Text', 'My book...']);
 $a=1;
 if ($a!=0) {
   $name = 'Верно!';
+  $pref = 'massive blue';
 } else {
   $name = 'Неверно!';
+  $pref = 'small black';
 }
-$label = $app->add(['Label', $name]);
+$label = $app->add(['Label', $name, $pref]);
