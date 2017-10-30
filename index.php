@@ -31,7 +31,7 @@ $button=$app->add(['Button','New','medium teal','iconRight'=>'right arrow',]);*/
 $label = $app->add(['Label', 'Book','medium red','icon'=>'book']);
 $label = $app->add(['Label', 'Book','medium red','image'=>'http://greetingbooks.com/wp-content/uploads/2015/08/3.png']);
 $text = $app->add(['Text', 'My book...']);
-$a=0;
+$a=1;
 if ($a!=0) {
   $name = 'Верно!';
   $pref = 'massive blue';
