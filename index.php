@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$app = new \atk4\ui\App('Добро пожаловать на страницу ссылок!');
+$app = new \atk4\ui\App('Добро пожаловать на страницу, уже не понятно чего...');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
 $button->set('My chess site');
