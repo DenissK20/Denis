@@ -32,9 +32,9 @@ $label = $app->add(['Label', 'Book','medium red','icon'=>'book']);
 $label = $app->add(['Label', 'Book','medium red','image'=>'http://greetingbooks.com/wp-content/uploads/2015/08/3.png']);
 $text = $app->add(['Text', 'My book...']);
 $a=1;
-if ($a==0) {
+if ($a!=0) {
   $name = 'Верно!';
-}else{
+} else {
   $name = 'Неверно!';
 }
 $label = $app->add(['Label', $name]);
