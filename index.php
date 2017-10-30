@@ -35,8 +35,11 @@ $a=1;
 if ($a!=0) {
   $name = 'Верно!';
   $pref = 'massive blue';
+  $img = 'https://st.depositphotos.com/2931363/4881/i/950/depositphotos_48814037-stock-photo-happy-man-in-shirt-talking.jpg';
 } else {
   $name = 'Неверно!';
   $pref = 'small black';
+  $img = 'https://st2.depositphotos.com/1115531/5548/i/950/depositphotos_55488945-stock-photo-portrait-one-sad-man-standing.jpg';
 }
 $label = $app->add(['Label', $name, $pref]);
+$image = $app->add(['Image', $img]);
