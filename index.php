@@ -27,7 +27,7 @@ $button->set('My web site');
 $button->addClass('large purple');
 $button->icon = 'browser';
 $button->link ('http://mysecondwork.herokuapp.com');
-$button=$app->add(['Button','New','medium teal','iconRight'=>'right arrow',]);*/
+$button=$app->add(['Button','New','medium teal','iconRight'=>'right arrow',]);
 $label = $app->add(['Label', 'Book','medium red','icon'=>'book']);
 $label = $app->add(['Label', 'Book','medium red','image'=>'http://greetingbooks.com/wp-content/uploads/2015/08/3.png']);
 $text = $app->add(['Text', 'My book...']);
@@ -42,4 +42,6 @@ if ($a!=0) {
   $img = 'https://st2.depositphotos.com/1115531/5548/i/950/depositphotos_55488945-stock-photo-portrait-one-sad-man-standing.jpg';
 }
 $label = $app->add(['Label', $name, $pref]);
-$image = $app->add(['Image', $img]);
+$image = $app->add(['Image', $img]);*/
+$button = $app->layout->add(['Button','LINK TO THE NEXT FILE']);
+$button->link(['text', 'name'=>'Denis']);
