@@ -6,4 +6,4 @@ $app->initLayout('Centered');
 $h = $_GET['surname'];
 $label = $app->add(['Label', $c.' '.$h]);*/
 $a = $_GET['number'];
-$label = $app->add(['Label', $a ,'large blue']);
+$label = $app->add(['Label', $a ,'massive blue']);
