@@ -43,5 +43,8 @@ if ($a!=0) {
 }
 $label = $app->add(['Label', $name, $pref]);
 $image = $app->add(['Image', $img]);*/
-$button = $app->layout->add(['Button','LINK TO THE NEXT FILE']);
+$button = $app->layout->add(['Button','LINK TO THE FIRST FILE']);
 $button->link(['text', 'name'=>'Denis']);
+
+$button = $app->layout->add(['Button','LINK TO THE SECOND FILE']);
+$button->link(['text', 'surname'=>'Kornienko']);
