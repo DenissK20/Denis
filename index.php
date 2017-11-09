@@ -44,7 +44,7 @@ if ($a!=0) {
 $label = $app->add(['Label', $name, $pref]);
 $image = $app->add(['Image', $img]);*/
 /*$button = $app->layout->add(['Button','LINK TO THE FIRST FILE']);
-$button->link(['text', 'name'=>'Denis', 'surname'=>'Kornienko']);*/
+$button->link(['text', 'name'=>'Denis', 'surname'=>'Kornienko']);
 
 $button1 = $app->layout->add(['Button', '1']);
 $button1->link(['text', 'number'=>'1']);
@@ -53,4 +53,17 @@ $button2 = $app->layout->add(['Button', '2']);
 $button2->link(['text', 'number'=>'2']);
 
 $button3 = $app->layout->add(['Button', '3']);
-$button3->link(['text', 'number'=>'3']);
+$button3->link(['text', 'number'=>'3']);*/
+$button=1;
+$button=2;
+$button=3;
+if ($button=1) {
+  $button1 = $app->layout->add(['Button', '1']);
+  $button1->link(['text', 'number'=>'1']);
+} else ($button=2) {
+  $button2 = $app->layout->add(['Button', '2']);
+  $button2->link(['text', 'number'=>'2']);
+} else ($button=3) {
+  $button3 = $app->layout->add(['Button', '3']);
+  $button3->link(['text', 'number'=>'3']);
+}
