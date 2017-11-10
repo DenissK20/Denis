@@ -1,0 +1,20 @@
+<?php
+require 'vendor/autoload.php';
+$app = new \atk4\ui\App('Game');
+$app->initLayout('Centered');
+/*$c = $_GET['name'];
+$h = $_GET['surname'];
+$label = $app->add(['Label', $c.' '.$h]);
+$a = $_GET['number'];
+$label = $app->add(['Label', $a ,'massive blue']);*/
+$min = $_GET['min'];
+$max = $_GET['max'];
+
+$mid = round(($min+$max)/2);
+
+$button1 = $app->layout->add(['Button', 'Моё число больше']);
+$button1->link(['game', 'min'=$mid, 'max'=$max]);
+
+$button2 = $app->layout->add(['Button', 'Моё число меньше']);
+
+$button3 = $app->layout->add(['Button', 'Моё число там']);

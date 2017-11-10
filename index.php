@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$app = new \atk4\ui\App('Добро пожаловать на страницу, уже не понятно чего...');
+$app = new \atk4\ui\App('Добро пожаловать, геймер!');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
 $button->set('My chess site');
@@ -54,3 +54,7 @@ $button2->link(['text', 'number'=>'2']);
 
 $button3 = $app->layout->add(['Button', '3']);
 $button3->link(['text', 'number'=>'3']);*/
+
+$text = app->add(['Text', 'Hello noob! Click on the button!!! Faster!!!']);
+$button = $app->layout->add(['Button', 'Start!']);
+$button->link(['game', 'min'=>1, 'max'=>100]);
