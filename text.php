@@ -7,5 +7,3 @@ $h = $_GET['surname'];
 $label = $app->add(['Label', $c.' '.$h]);
 $a = $_GET['number'];
 $label = $app->add(['Label', $a ,'massive blue']);*/
-$button = $_GET['number'];
-$label = $app->add(['Label', $a ,'massive blue']);
