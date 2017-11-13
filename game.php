@@ -16,5 +16,7 @@ $button1 = $app->layout->add(['Button', 'Моё число больше']);
 $button1->link(['game', 'min'=$mid, 'max'=$max]);
 
 $button2 = $app->layout->add(['Button', 'Моё число меньше']);
+$button2->link(['game', 'min'=$min, 'max'=$mid]);
 
 $button3 = $app->layout->add(['Button', 'Моё число там']);
+$button3->link(['wiin']);
