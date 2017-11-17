@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$app = new \atk4\ui\App('Game');
+$app = new \atk4\ui\App('Угадаем твоё число!');
 $app->initLayout('Centered');
 /*$c = $_GET['name'];
 $h = $_GET['surname'];
@@ -12,7 +12,7 @@ $max = $_GET['max'];
 
 If ($max-$min==1){
   $text = $app->add(['Text', 'Oh no, Error!']);
-  $button = $app->layout->add(['Button', 'Try again']);
+  $button = $app->layout->add(['Button', 'Try again', 'medium white']);
   $button->link(['index']);
 } else {
 
@@ -25,6 +25,6 @@ If ($max-$min==1){
   $button2 = $app->layout->add(['Button', 'Моё число меньше']);
   $button2->link(['game', 'min'=>$min, 'max'=>$mid]);
 
-  $button3 = $app->layout->add(['Button', 'Моё число там']);
+  $button3 = $app->layout->add(['Button', 'Это моё число', 'big red']);
   $button3->link(['wiin']);
        }
