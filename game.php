@@ -11,7 +11,7 @@ $min = $_GET['min'];
 $max = $_GET['max'];
 
 If ($max-$min==1){
-  $text = $app->->add(['Text', 'Oh no, Error!']);
+  $text = $app->add(['Text', 'Oh no, Error!']);
   $button = $app->layout->add(['Button', 'Try again']);
   $button->link(['index']);
 } else {
