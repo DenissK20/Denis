@@ -13,6 +13,7 @@ $max = $_GET['max'];
 If ($max-$min==1){
   $text = $app->->add(['Text', 'Oh no, Error!']);
   $button = $app->layout->add(['Button', 'Try again']);
+  $button->link(['index']);
 } else {
 
   $mid = round(($min+$max)/2);
