@@ -17,6 +17,7 @@ If ($max-$min==1){
 } else {
 
   $mid = round(($min+$max)/2);
+  $label = $app->add(['Label', $mid]);
 
   $button1 = $app->layout->add(['Button', 'Моё число больше']);
   $button1->link(['game', 'min'=>$mid, 'max'=>$max]);
