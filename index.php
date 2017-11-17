@@ -55,6 +55,6 @@ $button2->link(['text', 'number'=>'2']);
 $button3 = $app->layout->add(['Button', '3']);
 $button3->link(['text', 'number'=>'3']);*/
 
-$text = app->add(['Text', 'Hello noob! Click on the button!!! Faster!!!']);
+$text = $app->add(['Text', 'Hello noob! Click on the button!!! Faster!!!']);
 $button = $app->layout->add(['Button', 'Start!']);
 $button->link(['game', 'min'=>1, 'max'=>100]);
