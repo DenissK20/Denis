@@ -10,7 +10,7 @@ $label = $app->add(['Label', $a ,'massive blue']);*/
 $min = $_GET['min'];
 $max = $_GET['max'];
 
-If ($max-$min==1){
+If (($max-$min==1)and(isset($_GET['key']))){
   $text = $app->add(['Text', 'Oh no, Error!']);
   $button = $app->layout->add(['Button', 'Try again', 'medium green']);
   $button->link(['index']);
@@ -20,10 +20,10 @@ If ($max-$min==1){
   $label = $app->add(['Label', $mid, 'medium blue']);
 
   $button1 = $app->layout->add(['Button', 'Моё число больше']);
-  $button1->link(['game', 'min'=>$mid, 'max'=>$max]);
+  $button1->link(['game', 'min'=>$mid, 'max'=>$max, 'key'=>'key']);
 
   $button2 = $app->layout->add(['Button', 'Моё число меньше']);
-  $button2->link(['game', 'min'=>$min, 'max'=>$mid]);
+  $button2->link(['game', 'min'=>$min, 'max'=>$mid, 'key'=>'key']);
 
   $button3 = $app->layout->add(['Button', 'Это моё число', 'big red']);
   $button3->link(['wiin']);
