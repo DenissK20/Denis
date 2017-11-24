@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+require 'Cat.php';
 $app = new \atk4\ui\App('Добро пожаловать, геймер!');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
@@ -53,8 +54,32 @@ $button2 = $app->layout->add(['Button', '2']);
 $button2->link(['text', 'number'=>'2']);
 
 $button3 = $app->layout->add(['Button', '3']);
-$button3->link(['text', 'number'=>'3']);*/
+$button3->link(['text', 'number'=>'3']);
 
 $text = $app->add(['Text', 'Hello noob! Click on the button!!! Faster!!!']);
 $button = $app->layout->add(['Button', 'Start!', 'large purple']);
-$button->link(['game', 'min'=>1, 'max'=>100]);
+$button->link(['game', 'min'=>1, 'max'=>100]);*/
+
+$cat1 = new Cat;
+$cat1->name='Pups';
+$cat1->sex='Boy';
+$cat1->age='8';
+$cat1->color='Grey';
+$cat1->AgeCheck();
+$label1 = $app->add(['Label', $cat1->name.' '.$answer]);
+
+$cat2 = new Cat;
+$cat2->name='Sestra';
+$cat2->sex='Girl';
+$cat2->age='4';
+$cat2->color='Pink';
+$cat2->AgeCheck();
+$label2 = $app->add(['Label', $cat2->name.' '.$answer]);
+
+$cat3 = new Cat;
+$cat3->name='Attacker';
+$cat3->sex='Boy';
+$cat3->age='13';
+$cat3->color='Red';
+$cat3->AgeCheck();
+$label3 = $app->add(['Label', $cat3->name.' '.$answer]);
