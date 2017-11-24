@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 require 'Cat.php';
-$app = new \atk4\ui\App('Добро пожаловать, геймер!');
+$app = new \atk4\ui\App('Приют котов');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
 $button->set('My chess site');
