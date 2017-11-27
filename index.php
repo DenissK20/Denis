@@ -65,18 +65,18 @@ $cat1->name='Pups';
 $cat1->sex='Boy';
 $cat1->age='8';
 $cat1->color='Grey';
-$label1 = $app->add(['Label', $cat1->name.' '.($cat1->AgeCheck()),'image'=>'https://www.google.lv/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjx_5Heo9rXAhWmHJoKHZwsBx0QjRwIBw&url=http%3A%2F%2Fwww.sunny-cat.ru%2Fplug-e-gallery-v-16808.html&psig=AOvVaw39yCDYsrCLXp6pPdMcIEWx&ust=1511718264131020']);
+$label1 = $app->add(['Label', $cat1->name.' '.($cat1->AgeCheck()),'image'->'https://www.google.lv/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjx_5Heo9rXAhWmHJoKHZwsBx0QjRwIBw&url=http%3A%2F%2Fwww.sunny-cat.ru%2Fplug-e-gallery-v-16808.html&psig=AOvVaw39yCDYsrCLXp6pPdMcIEWx&ust=1511718264131020']);
 
 $cat2 = new Cat;
 $cat2->name='Sestra';
 $cat2->sex='Girl';
 $cat2->age='4';
 $cat2->color='Pink';
-$label2 = $app->add(['Label', $cat2->name.' '.($cat2->AgeCheck()), 'image'=>'https://www.google.lv/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwi-yOajpNrXAhXiCJoKHV48AnIQjRwIBw&url=http%3A%2F%2Fcat40.ru%2Fkotyata-ishhut-dom-im-vsego-1-5-mesyatsa%2F&psig=AOvVaw3iXIuPOsqeE6cRdFNwIC94&ust=1511718460950060']);
+$label2 = $app->add(['Label', $cat2->name.' '.($cat2->AgeCheck()), 'image'->'https://www.google.lv/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwi-yOajpNrXAhXiCJoKHV48AnIQjRwIBw&url=http%3A%2F%2Fcat40.ru%2Fkotyata-ishhut-dom-im-vsego-1-5-mesyatsa%2F&psig=AOvVaw3iXIuPOsqeE6cRdFNwIC94&ust=1511718460950060']);
 
 $cat3 = new Cat;
 $cat3->name='Attacker';
 $cat3->sex='Boy';
 $cat3->age='13';
 $cat3->color='Red';
-$label3 = $app->add(['Label', $cat3->name.' '.($cat3->AgeCheck()), 'image'=>'https://www.google.lv/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwiZ-Iy-pNrXAhXKAJoKHd8MDboQjRwIBw&url=http%3A%2F%2Fwww.happy-bears.org%2F%3Fphotogallery.php%26rus%261&psig=AOvVaw3Jo-_HMga9d6D2wHZXb1MT&ust=1511718508753161']);
+$label3 = $app->add(['Label', $cat3->name.' '.($cat3->AgeCheck()), 'image'->'https://www.google.lv/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwiZ-Iy-pNrXAhXKAJoKHd8MDboQjRwIBw&url=http%3A%2F%2Fwww.happy-bears.org%2F%3Fphotogallery.php%26rus%261&psig=AOvVaw3Jo-_HMga9d6D2wHZXb1MT&ust=1511718508753161']);
