@@ -94,13 +94,13 @@ $laima2->color='red';
 $label2 = $app->add(['Label', $laima2->name, $laima2->color]);
 
 $laima3 = new Laima;
-$laima3->name='Lacisi';
+$laima3->name='Laciši';
 $laima3->price='5';
 $laima3->color='teal';
 $label3 = $app->add(['Label', $laima3->name, $laima3->color]);
 
 $laima4 = new Laima;
-$laima4->name='Serenade';
+$laima4->name='Serenāde';
 $laima4->price='8';
 $laima4->color='blue';
 $label4 = $app->add(['Label', $laima4->name, $laima4->color]);
