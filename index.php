@@ -85,22 +85,22 @@ $laima1 = new Laima;
 $laima1->name='Vaverīte';
 $laima1->price='7';
 $laima1->color='green';
-$label1 = $app->add(['Label', $laima1->name, $laima1->color]);
+$label1 = $app->add(['Label', $laima1->name, $laima1->color, 'detail'=>$laima1->price]);
 
 $laima2 = new Laima;
 $laima2->name='Lukss';
 $laima2->price='9';
 $laima2->color='red';
-$label2 = $app->add(['Label', $laima2->name, $laima2->color]);
+$label2 = $app->add(['Label', $laima2->name, $laima2->color, 'detail'=>$laima2->price]);
 
 $laima3 = new Laima;
 $laima3->name='Laciši';
 $laima3->price='5';
 $laima3->color='teal';
-$label3 = $app->add(['Label', $laima3->name, $laima3->color]);
+$label3 = $app->add(['Label', $laima3->name, $laima3->color, 'detail'=>$laima3->price]);
 
 $laima4 = new Laima;
 $laima4->name='Serenāde';
 $laima4->price='8';
 $laima4->color='blue';
-$label4 = $app->add(['Label', $laima4->name, $laima4->color]);
+$label4 = $app->add(['Label', $laima4->name, $laima4->color, 'detail'=>$laima4->price]);
