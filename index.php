@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
-require 'Cat.php';
-$app = new \atk4\ui\App('Приют котов');
+require 'Laima.php';
+$app = new \atk4\ui\App('Добро пожаловать на фабрику "Laima"!');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
 $button->set('My chess site');
@@ -58,7 +58,7 @@ $button3->link(['text', 'number'=>'3']);
 
 $text = $app->add(['Text', 'Hello noob! Click on the button!!! Faster!!!']);
 $button = $app->layout->add(['Button', 'Start!', 'large purple']);
-$button->link(['game', 'min'=>1, 'max'=>100]);*/
+$button->link(['game', 'min'=>1, 'max'=>100]);
 
 $cat1 = new Cat;
 $cat1->name='Pups';
@@ -79,4 +79,28 @@ $cat3->name='Attacker';
 $cat3->sex='Boy';
 $cat3->age='13';
 $cat3->color='Red';
-$label3 = $app->add(['Label', $cat3->name.' '.($cat3->AgeCheck()), 'image'=>'http://www.happy-bears.org/gallery/expos/Happy%20Bears%20Axel%20Golden%20Boy.%20Chisinau%2013-04-2013_669_ny11_62348.jpg']);
+$label3 = $app->add(['Label', $cat3->name.' '.($cat3->AgeCheck()), 'image'=>'http://www.happy-bears.org/gallery/expos/Happy%20Bears%20Axel%20Golden%20Boy.%20Chisinau%2013-04-2013_669_ny11_62348.jpg']);*/
+
+$laima1 = new Laima;
+$laima1->name='Vaverīte';
+$laima1->price='7';
+$laima1->color='green';
+$label1 = $app->add(['Label', $laima1->name, $laima1->color]);
+
+$laima2 = new Laima;
+$laima2->name='Lukss';
+$laima2->price='9';
+$laima2->color='red';
+$label2 = $app->add(['Label', $laima2->name, $laima2->color]);
+
+$laima3 = new Laima;
+$laima3->name='Lacisi';
+$laima3->price='5';
+$laima3->color='teal';
+$label3 = $app->add(['Label', $laima3->name, $laima3->color]);
+
+$laima4 = new Laima;
+$laima4->name='Serenade';
+$laima4->price='8';
+$laima4->color='blue';
+$label4 = $app->add(['Label', $laima4->name, $laima4->color]);
