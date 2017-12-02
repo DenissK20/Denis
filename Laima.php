@@ -4,7 +4,7 @@ Class Laima {
   public $price;
   public $color;
   public function PriceCheck() {
-    If($this->price<7) {
+    If($this->price<=7) {
       return $answer = 'Дешёвые';
     } else {
       return $answer = 'Дорогие';
