@@ -3,8 +3,8 @@ Class Laima {
   public $name;
   public $price ;
   public $color;
-  public function AllPrice(0.5) {
-  $price = $this->price * 0.5;
+  public function AllPrice($weight) {
+  $price = $this->price * $weight;
   return $price;
 }
   /*public function PriceCheck() {
