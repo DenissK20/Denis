@@ -1,7 +1,6 @@
 <?php
 Class Laima {
   public $name;
-  public $price ;
   public $color;
   public function AllPrice($weight) {
   $price = $this->price * $weight;
