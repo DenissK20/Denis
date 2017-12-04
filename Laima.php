@@ -1,10 +1,11 @@
 <?php
 Class Laima {
   public $name;
+  public $price
   public $color;
   public function AllPrice($weight) {
-  $price = $this->price * $weight;
-  return $price;
+  $answer = $this->price * $weight;
+  return $answer;
 }
   /*public function PriceCheck() {
     If($this->price<=7) {
