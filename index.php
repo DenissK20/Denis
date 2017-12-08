@@ -85,23 +85,26 @@ $laima1 = new Laima;
 $laima1->name='Vaverīte';
 $laima1->price=7;
 $laima1->color='green';
-$label1 = $app->add(['Label', $laima1->name, $laima1->color.' massive', 'detail'=>$laima1->AllPrice('2'), 'image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001311662_V-VER-TE-2kg-konf-300x191.jpg']);
-/*
+$total = $laima1->AllPrice(2);
+$label1 = $app->add(['Label', $laima1->name.' '. $total, $laima1->color.' massive', 'detail'=>'Cena par kg '. $laima1->price, 'image'=>'http://www.laima.lv/wp-content/uploads/2016/05/4750001311662_V-VER-TE-2kg-konf-300x191.jpg']);
+
 $laima2 = new Laima;
 $laima2->name='Lukss';
 $laima2->price=9;
 $laima2->color='red';
-$label2 = $app->add(['Label', $laima2->name, $laima2->color.' massive', 'detail'=>$laima2->AllPrice(2), 'image'=>'https://nuko.lv/media/catalog/product/cache/1/image/480x740/9df78eab33525d08d6e5fb8d27136e95/0/0/00855201.jpg']);
+$total = $laima2->AllPrice(2);
+$label2 = $app->add(['Label', $laima2->name.' '. $total, $laima2->color.' massive', 'detail'=>'Cena par kg '. $laima2->price, 'image'=>'https://nuko.lv/media/catalog/product/cache/1/image/480x740/9df78eab33525d08d6e5fb8d27136e95/0/0/00855201.jpg']);
 
 $laima3 = new Laima;
 $laima3->name='Lacīši';
 $laima3->price=5;
 $laima3->color='teal';
-$label3 = $app->add(['Label', $laima3->name, $laima3->color.' massive', 'detail'=>$laima3->AllPrice(2), 'image'=>'http://www.ekspobirojs.lv/Attachment/NomPicture/18224_1000x1000.jpg']);
+$total = $laima3->AllPrice(2);
+$label3 = $app->add(['Label', $laima3->name.' '. $total, $laima3->color.' massive', 'detail'=>'Cena par kg '. $laima3->price, 'image'=>'http://www.ekspobirojs.lv/Attachment/NomPicture/18224_1000x1000.jpg']);
 
 $laima4 = new Laima;
 $laima4->name='Serenāde';
 $laima4->price=8;
 $laima4->color='blue';
-$label4 = $app->add(['Label', $laima4->name, $laima4->color.' massive', 'detail'=>$laima4->AllPrice(2), 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);
-*/
+$total = $laima4->AllPrice(2);
+$label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massive', 'detail'=>'Cena par kg '. $laima4->price, 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);
