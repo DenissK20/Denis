@@ -81,19 +81,19 @@ $cat3->age='13';
 $cat3->color='Red';
 $label3 = $app->add(['Label', $cat3->name.' '.($cat3->AgeCheck()), 'image'=>'http://www.happy-bears.org/gallery/expos/Happy%20Bears%20Axel%20Golden%20Boy.%20Chisinau%2013-04-2013_669_ny11_62348.jpg']);*/
 
-$button1 = $app->layout->add(['Button', '1']);
+$button1 = $app->layout->add(['Button', '1kg']);
 $button1->link(['index','weight'=>'1']);
 
-$button2 = $app->layout->add(['Button', '2']);
+$button2 = $app->layout->add(['Button', '2kg']);
 $button2->link(['index','weight'=>'2']);
 
-$button3 = $app->layout->add(['Button', '3']);
+$button3 = $app->layout->add(['Button', '3kg']);
 $button3->link(['index','weight'=>'3']);
 
-$button4 = $app->layout->add(['Button', '4']);
+$button4 = $app->layout->add(['Button', '4kg']);
 $button4->link(['index','weight'=>'4']);
 
-$button5 = $app->layout->add(['Button', '5']);
+$button5 = $app->layout->add(['Button', '5kg']);
 $button5->link(['index','weight'=>'5']);
 
 $weight = $_GET['weight'];
