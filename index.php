@@ -72,7 +72,7 @@ $cat2->name='Sestra';
 $cat2->sex='Girl';
 $cat2->age='4';
 $cat2->color='Pink';
-$label2 = $app->add(['Label', $cat2->name.' '.($cat2->AgeCheck()), 'image'=>'http://club-pets.com/profile/obj/1039/board/1449/1449-4646b.jpg']);
+$label2 = $app->add(['Label', $cat2->name.' '.($cat2->AgeCheck()),  'image'=>'http://club-pets.com/profile/obj/1039/board/1449/1449-4646b.jpg']);
 
 $cat3 = new Cat;
 $cat3->name='Attacker';
