@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
-require 'Laima.php';
-$app = new \atk4\ui\App('Добро пожаловать на фабрику "Laima"!');
+/*require 'Laima.php';*/
+$app = new \atk4\ui\App('Заполните, пожалуйста, анкету!');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
 $button->set('My chess site');
@@ -79,7 +79,7 @@ $cat3->name='Attacker';
 $cat3->sex='Boy';
 $cat3->age='13';
 $cat3->color='Red';
-$label3 = $app->add(['Label', $cat3->name.' '.($cat3->AgeCheck()), 'image'=>'http://www.happy-bears.org/gallery/expos/Happy%20Bears%20Axel%20Golden%20Boy.%20Chisinau%2013-04-2013_669_ny11_62348.jpg']);*/
+$label3 = $app->add(['Label', $cat3->name.' '.($cat3->AgeCheck()), 'image'=>'http://www.happy-bears.org/gallery/expos/Happy%20Bears%20Axel%20Golden%20Boy.%20Chisinau%2013-04-2013_669_ny11_62348.jpg']);
 
 $button1 = $app->layout->add(['Button', '1kg']);
 $button1->link(['index','weight'=>'1']);
@@ -125,3 +125,25 @@ $laima4->price=8;
 $laima4->color='blue';
 $total = $laima4->AllPrice($weight);
 $label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massive', 'detail'=>'Cena par kg '. $laima4->price, 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);
+*/
+$db = new
+\atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
+
+class Friends extends \atk4\data\Model {
+  public $table = 'friends';
+  function init() {
+    parent::init();
+    $this->addField('name');
+    $this->addField('surname');
+    $this->addField('birthday',['type'=>'date']);
+    $this->addField('email');
+    $this->addField('phone_number',['default'=>'+371']);
+    $this->addField('notes',['type'=>'text']);
+  }
+}
+$form = $app->layout->add('Form');
+$form->setModel(new Friends($db));
+$form->onSubmit(function($form) {
+  $form->model->save();
+  return $form->success('Record updated');
+});
