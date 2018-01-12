@@ -147,3 +147,8 @@ $form->onSubmit(function($form) {
   $form->model->save();
   return $form->success('Record updated');
 });
+$grid=$app->layout->add('Grid');
+$grid->setModel(new Friends($db));
+
+$crud=$app->layout->add('CRUD');
+$crud->setModel(new Friends($db));
