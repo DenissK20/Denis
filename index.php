@@ -1,7 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-/*require 'Laima.php';*/
-$app = new \atk4\ui\App('Заполните, пожалуйста, анкету!');
+$app = new \atk4\ui\App('Дарова!');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
 $button->set('My chess site');
@@ -152,5 +151,5 @@ $grid->setModel(new Friends($db));
 
 $crud=$app->layout->add('CRUD');
 $crud->setModel(new Friends($db));*/
-$tabs=$app->add('Tabs');
-$tabs->addTab('Shirts');
+$menu=$app->add('Menu');
+$menu->addItem('Shirts');
