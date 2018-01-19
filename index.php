@@ -153,3 +153,5 @@ $crud=$app->layout->add('CRUD');
 $crud->setModel(new Friends($db));*/
 $menu=$app->add('Menu');
 $menu->addItem('Shirts');
+$menu->addItem('Shoes');
+$menu->addItem('Pants');
