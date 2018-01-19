@@ -125,7 +125,7 @@ $laima4->price=8;
 $laima4->color='blue';
 $total = $laima4->AllPrice($weight);
 $label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massive', 'detail'=>'Cena par kg '. $laima4->price, 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);
-*/
+
 $db = new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
 
@@ -151,4 +151,6 @@ $grid=$app->layout->add('Grid');
 $grid->setModel(new Friends($db));
 
 $crud=$app->layout->add('CRUD');
-$crud->setModel(new Friends($db));
+$crud->setModel(new Friends($db));*/
+$tabs=$app->add('Tabs');
+$tabs->addTab('Shirts');
