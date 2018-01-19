@@ -152,6 +152,11 @@ $grid->setModel(new Friends($db));
 $crud=$app->layout->add('CRUD');
 $crud->setModel(new Friends($db));*/
 $menu=$app->add('Menu');
-$menu->addItem('Shirts');
-$menu->addItem('Shoes');
-$menu->addItem('Pants');
+$clothes=$menu->addMenu('Clothes');
+$clothes->addItem('Shirts');
+$clothes->addItem('Shoes');
+$clothes->addItem('Pants');
+$clothes->addItem('Hats');
+$clothes->addItem('Gloves');
+$electronics=$menu->addMenu('Electronics');
+$toys=$menu->addMenu('Toys');
