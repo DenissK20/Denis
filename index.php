@@ -154,7 +154,7 @@ $crud->setModel(new Friends($db));*/
 $menu=$app->add('Menu');
 $clothes=$menu->addMenu('Clothes');
 $clothes->addItem('Shirts','https://img1.wbstatic.net/c246x328/new/4340000/4349315-1.jpg');
-$clothes->addItem('Shoes');
+$clothes->addItem('Shoes','https://www.nordman.ru/media/attachment/files/33921b2701e34c2a81fc49e1ca4fcd76.jpg');
 $clothes->addItem('Pants');
 $clothes->addItem('Hats');
 $clothes->addItem('Gloves');
