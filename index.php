@@ -155,7 +155,7 @@ $menu=$app->add('Menu');
 $clothes=$menu->addMenu('Clothes');
 $clothes=$shirts->addMenu('Shirts')
 $shirts->addItem('Expensive shirt','https://img1.wbstatic.net/c246x328/new/4340000/4349315-1.jpg');
-$shirts->addItem('Cheap shirt','http://eravera.ru/joyojufoy/1152-1608.jpg')
+$shirts->addItem('Cheap shirt','http://eravera.ru/joyojufoy/1152-1608.jpg');
 $clothes->addItem('Shoes','https://www.nordman.ru/media/attachment/files/33921b2701e34c2a81fc49e1ca4fcd76.jpg');
 $clothes->addItem('Pants','http://www.patagonia.com/dis/dw/image/v2/ABBM_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw81e6aac0/images/hi-res/21190_BLK.jpg?sw=750&sh=750&sm=fit&sfrm=png');
 $clothes->addItem('Hats','https://www.villagehatshop.com/photos/product/standard/4511390S61504/all/pinch-crown-crushable-wool-felt-fedora-hat.jpg');
