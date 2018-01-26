@@ -153,6 +153,7 @@ $crud=$app->layout->add('CRUD');
 $crud->setModel(new Friends($db));*/
 $menu=$app->add('Menu');
 $clothes=$menu->addMenu('Clothes');
+
 $shirts=$clothes->addMenu('Shirts');
 $shirts->addItem('Expensive shirt','https://img1.wbstatic.net/c246x328/new/4340000/4349315-1.jpg');
 $shirts->addItem('Cheap shirt','http://eravera.ru/joyojufoy/1152-1608.jpg');
@@ -186,3 +187,18 @@ $toys->addItem('Toy phone','https://images-na.ssl-images-amazon.com/images/I/51S
 $toys->addItem('Toy kitchen','https://secure.img2-fg.wfcdn.com/im/03305875/resize-h800%5Ecompr-r85/1320/13208352/My+Very+Own+Wooden+Play+Kitchen.jpg');
 $toys->addItem('Toy cubes','https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6401737.jpg');
 $toys->addItem('Toy house','https://images-na.ssl-images-amazon.com/images/I/51KmO5S13iL._SX300_.jpg');
+
+
+$tabs=$app->add('Tabs');
+$clothes=$tabs->addTab('Clothes');
+$image=$clothes->add(['Image','http://www.fainaidea.com/wp-content/uploads/2017/12/s0575149fdb16d9.jpg']);
+$image=$clothes->add(['Image','https://i.ytimg.com/vi/EJCxX4xcdxE/maxresdefault.jpg']);
+$image=$clothes->add(['Image','http://xypd.net/wp-content/uploads/2011/06/nabor_base.jpg']);
+$electronics=$tabs->addTab('Electronics');
+$image=$electronics->add(['Image','https://abitur.bsuir.by/m/12_113227_1_53126.jpg']);
+$image=$electronics->add(['Image','https://hsto.org/files/a07/e59/e9b/a07e59e9b4b748b3909ba75fb3f1345d.JPG']);
+$image=$electronics->add(['Image','https://arduino-ua.com/products_pictures/large_KIT006-5.jpg']);
+$toys=$tabs->addTab('Toys');
+$image=$toys->add(['Image','https://vistanews.ru/uploads/posts/2017-02/1487504889_kupit-magkie-igrushki-optom.jpg']);
+$image=$toys->add(['Image','http://www.optom1.ru/admin/uploads/image/919219.jpg']);
+$image=$toys->add(['Image','http://greenword.ru/images/2014/07/img_53cb8dee20c79.jpg']);
