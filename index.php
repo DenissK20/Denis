@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$app = new \atk4\ui\App('Магазин');
+$app = new \atk4\ui\App('База данных');
 $app->initLayout('Centered');
 /*$button = $app->add('Button');
 $button->set('My chess site');
@@ -123,7 +123,7 @@ $laima4->name='Serenāde';
 $laima4->price=8;
 $laima4->color='blue';
 $total = $laima4->AllPrice($weight);
-$label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massive', 'detail'=>'Cena par kg '. $laima4->price, 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);
+$label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massive', 'detail'=>'Cena par kg '. $laima4->price, 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);*/
 
 $db = new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
@@ -135,7 +135,8 @@ class Friends extends \atk4\data\Model {
     $this->addField('name');
     $this->addField('surname');
     $this->addField('birthday',['type'=>'date']);
-    $this->addField('email');
+    $this->addField('age');
+        $this->addField('email');
     $this->addField('phone_number',['default'=>'+371']);
     $this->addField('notes',['type'=>'text']);
   }
@@ -143,15 +144,21 @@ class Friends extends \atk4\data\Model {
 $form = $app->layout->add('Form');
 $form->setModel(new Friends($db));
 $form->onSubmit(function($form) {
+  If($form->model['age']>14) {
   $form->model->save();
-  return $form->success('Record updated');
+  return new \atk4\ui\jsExpression('document.location = "success.php"');
+} else {
+  return new \atk4\ui\jsExpression('document.location = "error.php"');
+
+}
+
 });
 $grid=$app->layout->add('Grid');
 $grid->setModel(new Friends($db));
 
 $crud=$app->layout->add('CRUD');
-$crud->setModel(new Friends($db));*/
-$menu=$app->add('Menu');
+$crud->setModel(new Friends($db));
+/*$menu=$app->add('Menu');
 $clothes=$menu->addMenu('Clothes');
 
 $shirts=$clothes->addMenu('Shirts');
@@ -201,4 +208,4 @@ $image=$electronics->add(['Image','https://arduino-ua.com/products_pictures/larg
 $toys=$tabs->addTab('Toys');
 $image=$toys->add(['Image','https://vistanews.ru/uploads/posts/2017-02/1487504889_kupit-magkie-igrushki-optom.jpg']);
 $image=$toys->add(['Image','http://www.optom1.ru/admin/uploads/image/919219.jpg']);
-$image=$toys->add(['Image','http://greenword.ru/images/2014/07/img_53cb8dee20c79.jpg']);
+$image=$toys->add(['Image','http://greenword.ru/images/2014/07/img_53cb8dee20c79.jpg']);*/
