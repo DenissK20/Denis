@@ -3,6 +3,8 @@ session_start();
 require 'vendor/autoload.php';
 $app = new \atk4\ui\App('База данных');
 $app->initLayout('Centered');
+
+
 /*$button = $app->add('Button');
 $button->set('My chess site');
 $button->addClass('massive grey');
@@ -126,6 +128,7 @@ $laima4->color='blue';
 $total = $laima4->AllPrice($weight);
 $label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massive', 'detail'=>'Cena par kg '. $laima4->price, 'image'=>'https://www.birojs.lv/global/uploads/images/products/8-02-003.bg.jpg']);*/
 
+
 $db = new
 \atk4\data\Persistence_SQL('mysql:dbname=fdb;host=localhost','root','');
 
@@ -142,9 +145,14 @@ class Friends extends \atk4\data\Model {
     $this->addField('notes',['type'=>'text']);
   }
 }
+<<<<<<< HEAD
   If(isset($_SESSION['name'])) {
     $text=$app->add(['Text', $_SESSION['name']]);
   }
+=======
+$button = $app->layout->add(['Button', 'Info']);
+$button->link(['info']);
+>>>>>>> c235e0193505a919789ef46d05da2e4714ae6f8c
 $form = $app->layout->add('Form');
 $form->setModel(new Friends($db));
 $form->onSubmit(function($form) {
@@ -155,8 +163,8 @@ $form->onSubmit(function($form) {
 
 } else {
   return new \atk4\ui\jsExpression('document.location = "error.php"');
-
 }
+
 
 });
 $grid=$app->layout->add('Grid');
