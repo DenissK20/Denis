@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'vendor/autoload.php';
 $app = new \atk4\ui\App('База данных');
 $app->initLayout('Centered');
@@ -141,12 +142,17 @@ class Friends extends \atk4\data\Model {
     $this->addField('notes',['type'=>'text']);
   }
 }
+  If(isset($_SESSION['name'])) {
+    $text=$app->add(['Text', $_SESSION['name']]);
+  }
 $form = $app->layout->add('Form');
 $form->setModel(new Friends($db));
 $form->onSubmit(function($form) {
+  $_SESSION['name']=$form->model['name'];
   If($form->model['age']>14) {
   $form->model->save();
   return new \atk4\ui\jsExpression('document.location = "success.php"');
+
 } else {
   return new \atk4\ui\jsExpression('document.location = "error.php"');
 
@@ -158,6 +164,7 @@ $grid->setModel(new Friends($db));
 
 $crud=$app->layout->add('CRUD');
 $crud->setModel(new Friends($db));
+
 /*$menu=$app->add('Menu');
 $clothes=$menu->addMenu('Clothes');
 
