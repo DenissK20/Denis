@@ -15,3 +15,6 @@ $crud->setModel(new Friends($db));
 
 $button = $app->layout->add(['Button', 'Log out', 'purple']);
 $button->link(['logout']);
+
+$button2 = $app->layout->add(['Button', 'Main', 'green']);
+$button2->link(['index']);

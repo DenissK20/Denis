@@ -10,7 +10,7 @@ class Friends extends \atk4\data\Model {
     $this->addField('birthday',['type'=>'date']);
     $this->addField('age');
         $this->addField('email');
-    $this->addField('phone_number',['default'=>'+371']);
+    $this->addField('phone_number');
     $this->addField('notes',['type'=>'text']);
   }
 }
