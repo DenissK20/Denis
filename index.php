@@ -144,7 +144,15 @@ $form->onSubmit(function($form) {
   $_SESSION['name']=$form->model['name'];
   If($form->model['age']>14) {
   $form->model->save();
-  return new \atk4\ui\jsExpression('document.location = "success.php"');
+/*  $notifier = new \atk4\ui\jsNotify();
+  $notifier->setColor('purple')
+           ->setPosition('topLeft')
+           ->setWidth('50')
+           ->setContent('Hahah! There is an error!!!')
+           ->setTransition('bounce')
+           ->setIcon('smile outline');*/
+
+  return /*$notifier;*/new \atk4\ui\jsExpression('document.location = "success.php"');
 
 } else {
   return new \atk4\ui\jsExpression('document.location = "error.php"');

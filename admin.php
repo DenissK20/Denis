@@ -12,6 +12,7 @@ $app->initLayout('Centered');
 
 $crud=$app->layout->add('CRUD');
 $crud->setModel(new Friends($db));
+$crud->menu->addItem('Reload', new \atk4\ui\jsReload($crud));
 
 $button = $app->layout->add(['Button', 'Log out', 'purple']);
 $button->link(['logout']);
