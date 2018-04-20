@@ -1,9 +1,11 @@
 <?php
 session_start();
 require 'vendor/autoload.php';
-require 'connection.php';
-$app = new \atk4\ui\App('База данных');
-$app->initLayout('Centered');
+require 'app.php';
+
+$app = new App('public');
+/*$app = new \atk4\ui\App('You WIN!!!');
+$app->initLayout('Centered'); */
 
 /*$button = $app->add('Button');
 $button->set('My chess site');
@@ -132,7 +134,7 @@ $label4 = $app->add(['Label', $laima4->name.' '. $total, $laima4->color.' massiv
     $text=$app->add(['Text', $_SESSION['name']]);
   }
 
-$button = $app->layout->add(['Button', 'Info', 'blue']);
+$button = $app->add(['Button', 'Info', 'blue']);
 $button->link(['info']);
 
 $button2 = $app->layout->add(['Button', 'Admin', 'purple']);
