@@ -3,9 +3,9 @@ session_start();
 require 'vendor/autoload.php';
 require 'app.php';
 
-//$app = new App('public');
-//$app = new \atk4\ui\App('You WIN!!!');
-/*$app->initLayout('Centered'); */
+$app = new App('public');
+/*$app = new \atk4\ui\App('You WIN!!!');
+$app->initLayout('Centered'); */
 
 /*$button = $app->add('Button');
 $button->set('My chess site');
