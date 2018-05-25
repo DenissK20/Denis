@@ -4,7 +4,7 @@ require 'connection.php';
 Class App extends \atk4\ui\App{
     public $db;
     public $sms;
-    function __constructiom($mode) {
+    function __construct($mode) {
        parent::__construct('Party');
        If ($mode == 'public') {
           $this->initLayout('Centered');
@@ -25,8 +25,8 @@ Class App extends \atk4\ui\App{
         }elseif($mode == 'admin') {
            $this->initLayout('Admin');
            $this->layout->leftMenu->addItem(['Main menu', 'icon'=>'home'], ['index']);
-           $this->layout->leftMenu->addItem(['Admin', 'icon'=>'users'], ['admin']);
-           $this->layout->leftMenu->addItem(['User', 'icon'=>'unordered list'], ['user']);
+           $this->layout->leftMenu->addItem(['Admin', 'icon'=>'places'], ['admin']);
+           $this->layout->leftMenu->addItem(['Places', 'icon'=>'unordered list'], ['trytest']);
         }
        }
     }
